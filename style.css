@@ -1,0 +1,273 @@
+body{
+    background-image:url(image/back.jpg);
+   background-size:1550px;
+   background-repeat: no-repeat;
+}
+
+.btn{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border-color: white;
+    cursor: pointer;
+    outline: none;
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: white;
+}
+
+.btncontainer{
+    display: flex;
+    justify-content: center;
+    /* center: items are centered in the cross-axis */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+}
+
+.textcont{
+    color: white;
+    font-size: 18px;
+
+}
+.imagecont{
+   margin-left: 700px;
+}
+.imagecont2{
+    margin-left: 120px;
+    margin-top: 50px;
+ }
+ p{
+    text-shadow:0 0 10px blue, 0 0 8px aquamarine;
+ }
+#title{
+    font-size: 2.5em;
+   
+}
+#cap{
+    font-size: 0.8em;
+    
+}
+img{
+    width: 200px;
+}
+
+.fish1{
+  animation-name: wave1;
+  animation-duration: 14s;
+  position: absolute;
+  animation-direction: reverse;
+  animation-iteration-count: 5;
+}
+
+.fish2{
+ animation-name: wave2;
+  animation-duration: 7s;
+  animation-delay: 0.5s;
+  position: absolute;
+  animation-direction: reverse;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-in-out;
+}
+
+.fish3{
+    animation-name: wave3;
+     animation-duration: 7s;
+     animation-delay: 0.5s;
+     position: absolute;
+     animation-direction: reverse;
+     animation-timing-function: ease-out;
+     animation-iteration-count: 5;
+   }
+
+   .fish4{
+    animation-name: wave4;
+     animation-duration: 12s;
+     animation-delay: 1s;
+     position: absolute;
+     animation-direction: reverse;
+     animation-iteration-count: 5;
+   }
+   
+   .bubblecontainer{
+       margin-top: 22%;
+       width: 100%;
+   }
+   .bubble2,.bubble4,.bubble6,.bubble8,.bubble10{
+       opacity: 0;
+       width: 100px;
+       margin-left: 40px;
+   }
+   
+.bubble1{
+        margin-left:40px;
+        width: 100px;
+       position: absolute;
+       animation-name: popup;
+       animation-delay: 0.5s;
+       animation-duration: 10s;
+       animation-timing-function: ease-in;
+       animation-iteration-count: 5;
+       animation-direction: normal;
+   }
+   
+
+.bubble3{
+    margin-left:40px;
+    width: 100px;
+    position: absolute;
+    animation-name: popup;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 5;
+    animation-delay: 1.5s;
+    
+}
+.bubble5{
+    margin-left:40px;
+    width: 100px;
+    position: absolute;
+    animation-name: popup;
+    animation-duration: 14s;
+    animation-iteration-count: 5;
+    animation-delay: 2s;
+    animation-direction: normal;
+}
+.bubble7{
+    margin-left:40px;
+    width: 100px;
+    position: absolute;
+    animation-name: popup;
+    animation-duration: 16s;
+    animation-iteration-count: 5;
+    animation-delay: 2.5s;
+    animation-direction: normal;
+}
+.bubble9{
+    margin-left:40px;
+    width: 100px;
+    position: absolute;
+    animation-name: popup;
+    animation-duration: 18s;
+    animation-iteration-count: 5;
+    animation-delay: 3s;
+    animation-direction: normal;
+}
+
+@keyframes wave1 {
+    0%{
+        left: -20%;
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(100px) rotate(-20deg);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(200px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(150px);
+        left: 120%;
+    }
+    
+}
+
+@keyframes wave2{
+    0%{
+        left: -20%;
+        transform: translateY(150px);
+    }
+    20%{
+        transform: translateY(0px) rotate(20deg);
+    }
+    40%{
+        transform: translateY(180px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    80%{
+        transform: translateY(100px) rotate(40deg);
+    }
+    100%{
+        transform: translateY(0px);
+        left: 120%;
+    }
+    
+}
+
+@keyframes wave3{
+    0%{
+        left: -20%;
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(200px) rotate(20deg);
+    }
+    40%{
+        transform: translateY(0px);
+        
+    }
+    60%{
+        transform: translateY(150px);
+        width: 20%;
+    }
+    80%{
+        transform: translateY(0px) rotate(40deg);
+    }
+    100%{
+        transform: translateY(100px);
+        left: 120%;
+    }
+    
+}
+
+@keyframes wave4{
+    0%{
+        left: -20%;
+        transform: translateY(200px);
+    }
+    20%{
+        transform: translateYa(0px) rotate(-20deg);
+    }
+    40%{
+        transform: translateY(200px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    80%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(0px);
+        left: 120%;
+    }
+}
+
+@keyframes popup {
+    0%{
+        opacity: 0.5;
+        transform: translateY(-200px);
+    }
+    40%{
+        opacity: 1;
+        transform: translateY(-400px);
+    }
+    80%{
+
+        opacity: 0;
+       transform:translateY(-800px);
+    }
+
+}
